@@ -23,7 +23,12 @@ class _ShopPageState extends State<ShopPage> {
     // let user know it add been successfully added 
     showDialog(context: context, 
     builder: (context) => AlertDialog(
-        title: Text("Successfully added to cart"),
+        title: Text(
+          "Successfully added to cart",
+          style: GoogleFonts.poppins(
+            fontSize: 18,
+          ),
+        ),
       ),
     );
   }
@@ -49,6 +54,7 @@ class _ShopPageState extends State<ShopPage> {
               // list of coffee to buy
               Expanded(
                 child: ListView.builder(
+                  physics: const BouncingScrollPhysics(),
                   itemCount: value.coffeeShop.length,
                   itemBuilder: (context, index) {
                   
