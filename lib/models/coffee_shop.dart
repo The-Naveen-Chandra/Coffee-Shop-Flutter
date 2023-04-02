@@ -32,19 +32,18 @@ class CoffeeShop extends ChangeNotifier {
       imagePath: "assets/images/glass.png"
     ),
 
-    // beans
-    Coffee(
-      name: 'Beans', 
-      price: "2.10", 
-      imagePath: "assets/images/beans.png"
-    ),
-
-
     // Grind coffee
     Coffee(
       name: 'Grind Coffee', 
       price: "4.10", 
       imagePath: "assets/images/grinder.png"
+    ),
+    
+    // beans
+    Coffee(
+      name: 'Beans', 
+      price: "2.10", 
+      imagePath: "assets/images/beans.png"
     ),
 
     // bag of beans
