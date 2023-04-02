@@ -7,14 +7,33 @@ class HomePage extends StatefulWidget {
 
   @override
   State<HomePage> createState() => _HomePageState();
-}
+} 
 
 class _HomePageState extends State<HomePage> {
+
+  // navigate bottom bar
+  int _selectedIndex = 0;
+  navigateBottomBar(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
+
+  // pages
+  final List<Widget> _pages = [
+    // shop page
+
+    // cart page
+  ];
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: backgroundColor,
-      bottomNavigationBar: const MyBottomNavBar(),
+      bottomNavigationBar: MyBottomNavBar(
+        onTabChange: (index) => navigateBottomBar(index),
+      ),
     );
   }
+  
 }
