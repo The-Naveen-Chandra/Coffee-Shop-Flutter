@@ -23,11 +23,11 @@ class _HomePageState extends State<HomePage> {
   // pages
   final List<Widget> _pages = [
     // shop page
-    ShopPage(),
+    const ShopPage(),
 
 
     // cart page
-    CartPage(),
+    const CartPage(),
   ];
 
   @override

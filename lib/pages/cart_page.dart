@@ -47,7 +47,11 @@ class _CartPageState extends State<CartPage> {
                   Coffee eachCoffee = value.userCart[index];
 
                   // return coffee tile
-                 return CoffeeTile(coffee: eachCoffee, onPressed: () => removeFromCart(eachCoffee), icon: Icon(Icons.delete));
+                 return CoffeeTile(
+                    coffee: eachCoffee, 
+                    onPressed: () => removeFromCart(eachCoffee), 
+                    icon: const Icon(Icons.delete_outline)
+                  );
                 }),
               )
             ],
