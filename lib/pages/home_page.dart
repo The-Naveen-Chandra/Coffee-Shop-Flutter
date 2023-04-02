@@ -1,3 +1,4 @@
+import 'package:coffee_shop/components/bottom_nav_bar.dart';
 import 'package:coffee_shop/constant/const.dart';
 import 'package:flutter/material.dart';
 
@@ -13,6 +14,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: backgroundColor,
+      bottomNavigationBar: const MyBottomNavBar(),
     );
   }
 }
